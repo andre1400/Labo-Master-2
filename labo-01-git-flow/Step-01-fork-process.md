@@ -11,7 +11,7 @@
 Screenshot of Github
 ```
 
-* [ ] Clone "teacher" repo in your local machine
+* [ ] Clone your own repo in your local machine
 
 ```
 [INPUT]
