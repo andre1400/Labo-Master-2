@@ -31,7 +31,7 @@ Screenshot of Github
 //TODO
 ```
 
-* [ ] Update your develop branch directly to the upstream (main branch)
+* [ ] Integrate updates from upstream (main) into your repository (develop)
 
 ```
 [INPUT]
