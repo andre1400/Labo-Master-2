@@ -184,6 +184,11 @@ branch 'develop' set up to track 'origin/develop'.
 * Open a pull request comparing your develop branch to your main
 * Assign the pull request to your partner
 
-![image-20230512092231707](assets/image-20230512092231707.png)
+![image-20230512100239966](assets/image-20230512100239966.png)
 
 * Notify him using a issue "Could you please review my pull request ?"
+
+  ![image-20230512100439525](assets/image-20230512100439525.png)
+
+Il n'a pas voulu et a closed la pull request
+![image-20230512100551121](assets/image-20230512100551121.png)
