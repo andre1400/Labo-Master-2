@@ -50,7 +50,7 @@ Infra key: debian-projwebbdd
   New Relic installation complete
 ```
 
-* [ ] Install Golden Signal Alerts and the Agent
+* [x] Install Golden Signal Alerts and the Agent
 
 ```bash
 ==> Installing Golden Signal Alerts
@@ -86,11 +86,11 @@ done
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-* [ ] See your data (after the installation)
+* [x] See your data (after the installation)
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-* [ ] Observe the Dashboard displaying your vm's
+* [x] Observe the Dashboard displaying your vm's
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>NewRelic's Dashboard</p></figcaption></figure>
 
