@@ -12,11 +12,11 @@
 
 ```
 [INPUT]
-git clone https://github.com/andre1400/Labo-Master-1.git
+git clone https://github.com/andre1400/Labo-Master-2.git
 
 
 [OUTPUT]
-Cloning into 'Labo-Master-1'...
+Cloning into 'Labo-Master-2'...
 remote: Enumerating objects: 12, done.
 remote: Counting objects: 100% (12/12), done.
 remote: Compressing objects: 100% (11/11), done.
@@ -52,33 +52,35 @@ Hooks and filters directory? [C:/Users/andre/Documents/cpnv/MON/Labo-Master-1/.g
 
 ```
 [INPUT]
- git push --set-upstream origin develop
+ git push -u origin develop
 
 [OUTPUT]
-Enumerating objects: 21, done.
-Counting objects: 100% (21/21), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (20/20), done.
-Writing objects: 100% (21/21), 6.26 KiB | 3.13 MiB/s, done.
-Total 21 (delta 4), reused 10 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (4/4), done.
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 remote:
 remote: Create a pull request for 'develop' on GitHub by visiting:
-remote:      https://github.com/andre1400/Labo-Master-1/pull/new/develop
+remote:      https://github.com/andre1400/Labo-Master-2/pull/new/develop
 remote:
-To https://github.com/andre1400/Labo-Master-1.git
+To https://github.com/andre1400/Labo-Master-2.git
  * [new branch]      develop -> develop
-branch 'develop' set up to track 'origin/develop'
+branch 'develop' set up to track 'origin/develop'.
 ```
 
 * [ ] Create a branch feature called "terraformBasicScript"
 
 ```
 [INPUT]
-git checkout -b terraformBasicScript
+git flow feature start terraformBasicScript
 
 [OUTPUT]
-Switched to a new branch 'terraformBasicScript'
+Switched to a new branch 'feature/terraformBasicScript'
+
+Summary of actions:
+- A new branch 'feature/terraformBasicScript' was created, based on 'develop'
+- You are now on branch 'feature/terraformBasicScript'
+
+Now, start committing on your feature. When done, use:
+
+     git flow feature finish terraformBasicScript
 ```
 
 * [ ] Add this code and commit it (feat:add basic terraform script")
@@ -132,17 +134,22 @@ PS C:\Users\andre\Documents\cpnv\MON\Labo-Master-1> git commit -m "add basic ter
 [INPUT]
 git flow feature finish terraformBasicScript
 
-
 [OUTPUT]
-```
 Switched to branch 'develop'
 Your branch is up to date with 'origin/develop'.
-Updating 3192b2b..af82fc9
+Updating aed580b..61dd4dd
 Fast-forward
  labo-01-git-flow/terra.tf | 23 +++++++++++++++++++++++
  1 file changed, 23 insertions(+)
  create mode 100644 labo-01-git-flow/terra.tf
-Deleted branch feature/terraformBasicScript (was af82fc9).
+Deleted branch feature/terraformBasicScript (was 61dd4dd).
+
+Summary of actions:
+- The feature branch 'feature/terraformBasicScript' was merged into 'develop'
+- Feature branch 'feature/terraformBasicScript' has been locally deleted
+- You are now on branch 'develop'
+```
+
 
 Summary of actions:
 - The feature branch 'feature/terraformBasicScript' was merged into 'develop'
@@ -152,28 +159,26 @@ Summary of actions:
 
 ```
 [INPUT]
-//git push
+//git push -u origin develop
 
 [OUTPUT]
-//Enumerating objects: 4, done.
-Counting objects: 100% (4/4), done.
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
 Delta compression using up to 8 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 547 bytes | 547.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/andre1400/Labo-Master-1.git
-   36ebd4b..13b1b8e  terraformBasicScript -> terraformBasicScript
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 589 bytes | 589.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/andre1400/Labo-Master-2.git
+   aed580b..61dd4dd  develop -> develop
+branch 'develop' set up to track 'origin/develop'.
 ```
 
 * What happens to the feature/branch ?
 
 ```
-//TODO
-git status
-On branch feature/terraformBasicScript
-Your branch is up to date with 'origin/feature/terraformBasicScript'.
-
-nothing to commit, working tree clean
+- The feature branch 'feature/terraformBasicScript' was merged into 'develop'
+- Feature branch 'feature/terraformBasicScript' has been locally deleted
 ```
 
 * Open a pull request comparing your develop branch to your main
@@ -182,5 +187,3 @@ nothing to commit, working tree clean
 ![image-20230512092231707](assets/image-20230512092231707.png)
 
 * Notify him using a issue "Could you please review my pull request ?"
-
-![image-20230512091836022](assets/image-20230512091836022.png)
